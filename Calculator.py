@@ -77,5 +77,6 @@ if __name__ == "__main__":
     try:
         res = calculate(expr)
         print("Результат:", res)
+        print("-")
     except Exception as e:
         print("Ошибка в выражении:", e)
