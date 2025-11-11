@@ -1,0 +1,59 @@
+# Виртуальные окружения
+.venv/
+env/
+venv/
+ENV/
+
+# Кэш и временные файлы
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Логи и файлы отладки
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+*.pyc
+*.pyc
+
+# Файлы IDE (PyCharm)
+.idea/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+
+# Файлы Flake8 и других линтеров
+.flake8
+.flake8rc
+.flake8.cfg
+
+# Файлы тестов
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Файлы сборки
+build/
+dist/
+*.egg-info/
+
+# Файлы зависимостей
+requirements.txt
+requirements-dev.txt
+
+# Файлы конфигурации
+*.cfg
+*.ini
+*.toml
+
+# Прочие
+.DS_Store
+Thumbs.db
