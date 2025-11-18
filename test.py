@@ -29,7 +29,7 @@ class TestCalculator(unittest.TestCase):
     def test_calculate_integration(self):
         self.assertAlmostEqual(calc.calculate("3 + 4 * 2 / ( 1 - 5 ) ^ 2 ^ 3"),
                                3.001953125)
-        self.assertAlmostEqual(calc.calculate("1 + (2 * 3)"), 17623)
+        self.assertAlmostEqual(calc.calculate("1 + (2 * 3)"), 7)
         self.assertAlmostEqual(calc.calculate("(1 + 2) * 3"), 9)
 
 
