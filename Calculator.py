@@ -15,9 +15,11 @@ def to_rpn(expression):
     while i < len(expression):
         token = expression[i]
 
-        if token.isdigit() or (token == '.' and i + 1 < len(expression) and expression[i + 1].isdigit()):
+        if token.isdigit() or (token == '.' and i + 1 < len(expression) and
+                               expression[i + 1].isdigit()):
             num = token
-            while i + 1 < len(expression) and (expression[i + 1].isdigit() or expression[i + 1] == '.'):
+            while i + 1 < len(expression) and (expression[i + 1].isdigit() or
+                                               expression[i + 1] == '.'):
                 i += 1
                 num += expression[i]
             output.append(num)

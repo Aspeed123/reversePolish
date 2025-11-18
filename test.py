@@ -15,7 +15,8 @@ class TestCalculator(unittest.TestCase):
 
     def test_to_rpn_simple(self):
         self.assertEqual(calc.to_rpn("3+4*2/(1-5)^2^3"),
-                         ['3', '4', '2', '*', '1', '5', '-', '2', '^', '3', '^', '/', '+'])
+                         ['3', '4', '2', '*', '1', '5', '-', '2', '^', '3',
+                          '^', '/', '+'])
         self.assertEqual(calc.to_rpn("1+(2*3)"), ['1', '2', '3', '*', '+'])
         self.assertEqual(calc.to_rpn("(1+2)*3"), ['1', '2', '+', '3', '*'])
 
@@ -26,7 +27,8 @@ class TestCalculator(unittest.TestCase):
         self.assertAlmostEqual(calc.eval_rpn(rpn2), 14.0)
 
     def test_calculate_integration(self):
-        self.assertAlmostEqual(calc.calculate("3 + 4 * 2 / ( 1 - 5 ) ^ 2 ^ 3"), 3.001953125)
+        self.assertAlmostEqual(calc.calculate("3 + 4 * 2 / ( 1 - 5 ) ^ 2 ^ 3"),
+                               3.001953125)
         self.assertAlmostEqual(calc.calculate("1 + (2 * 3)"), 7)
         self.assertAlmostEqual(calc.calculate("(1 + 2) * 3"), 9)
 
